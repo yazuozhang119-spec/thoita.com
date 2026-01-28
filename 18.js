@@ -1,0 +1,1 @@
+let collectedPetalContainers=[];function runGame(){for(let e in room.enemies)!0===room.enemies[e].dead&&room.enemies[e].deadAnimationTimer>166&&delete room.enemies[e];!0===window.isDead&&!0===window.automaticallyLeaveFlag&&(delete window.automaticallyLeaveFlag,petalReloadData={},petalHpData={},send({leaveGame:!0,real:!0}));room.flowers[window.selfId]}
