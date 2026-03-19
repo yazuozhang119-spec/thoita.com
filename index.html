@@ -59,6 +59,51 @@
       <div class="chat-div"></div>
     </div>
     <canvas id="canvas" width="1280" height="720" style="z-index: -1"></canvas>
+    <!-- Squad Code Modal -->
+    <div id="squadCodeModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Join Private Squad</h2>
+                <button id="squadCodeClose" class="modal-close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Enter Squad Code:</p>
+                <input id="squadCodeInput" class="textbox" type="text" maxlength="20" autocomplete="off" spellcheck="false" placeholder="Enter squad code">
+            </div>
+            <div class="modal-footer">
+                <button id="squadCodeJoin" class="btn">Join</button>
+            </div>
+        </div>
+    </div>
+    <!-- Account Info Modal -->
+    <div id="accountInfoModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Account Information</h2>
+                <button id="accountInfoClose" class="modal-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="account-info-item">
+                    <span class="info-label">Username:</span>
+                    <span id="accountInfoUsername" class="info-value">Unknown</span>
+                </div>
+                <div class="account-info-item">
+                    <span class="info-label">Unique Code:</span>
+                    <span id="accountInfoUniqueCode" class="info-value">Not generated</span>
+                </div>
+                <div class="account-info-item">
+                    <span class="info-label">Bound QQ:</span>
+                    <span id="accountInfoQQ" class="info-value">Not bound</span>
+                </div>
+                <div class="account-info-note">
+                    <p>Use your unique code to bind your QQ account with the bot.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="accountInfoOK" class="btn">OK</button>
+            </div>
+        </div>
+    </div>
     <script>
       (function() {
         window.mobileDiv = document.querySelector('.mobile');
